@@ -1,0 +1,6 @@
+<h1>Users with Most Viewed Posts</h1>
+<ul>
+  <% @users_with_views.each do |user| %>
+    <li><%= user.name %> - <%= user.posts.sum(:views_count) %> views</li>
+  <% end %>
+</ul>

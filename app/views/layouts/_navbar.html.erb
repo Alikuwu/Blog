@@ -1,0 +1,19 @@
+<div class="p-3 mb-2 bg-secondary text-white">
+    <ul class="nav justify-content-evenly">
+        <li class="nav-item">
+            <%= link_to "Domov", root_path, class:'nav-link', class:"btn btn-dark"%>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Příspěvky", posts_path, class:'nav-link', class:"btn btn-dark"%>
+        </li>
+        <li>
+            <%= link_to "Nejoblíbenější uživatelé", posts_most_viewed_users_path, class:'nav-link', class:"btn btn-dark"%>
+        </li>
+        <li>
+            <%= link_to "Nový příspěvek", new_post_path, class:'nav-link', class:"btn btn-success"%>
+        </li>
+        <li>
+            <%= render 'user/session_manager'%>
+        </li>
+    </ul>
+</div>

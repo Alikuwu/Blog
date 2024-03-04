@@ -1,0 +1,13 @@
+<body class="p-3 mb-2 bg-dark text-white">
+  <p style="color: green"><%= notice %></p>
+    <div class="text-center" style="padding-top: 2rem">
+      <%= render @post %>
+
+      <div>
+        <%= link_to "Upravit příspěvek", edit_post_path(@post), class:"btn btn-outline-primary" %> |
+        <%= link_to "Zpět na příspěvky", posts_path, class:"btn btn-outline-primary" %>
+
+        <%= button_to "Smazat příspěvek", @post, method: :delete, class:"btn btn-outline-danger"%>
+      </div>
+  </div>
+</body>

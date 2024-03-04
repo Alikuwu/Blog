@@ -1,0 +1,13 @@
+<body class="p-3 mb-2 bg-dark text-white">
+  <div class="text-center" style="padding-top: 2rem">
+    <h1>Nový příspěvek</h1>
+
+    <%= render "form", post: @post %>
+
+    <br>
+
+    <div class="btn btn-info">
+      <a class="link-offset-2 link-underline link-underline-opacity-0"<%= link_to "Zpět na příspěvky", posts_path %>
+    </div>
+  </div>
+</body>

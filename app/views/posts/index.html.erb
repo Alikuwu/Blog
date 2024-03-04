@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+<div class="text-center">
+  <div style="padding-top: 2rem">
+    <h1>Příspěvky</h1>
+      <hr/><%= link_to "Nový příspěvek", new_post_path, class:"btn btn-outline-success" %> <hr/>
+    <div id="posts">
+      <% @posts.each do |post| %>
+        <%= render post %>
+        <p>
+          <%= link_to "Ukázat příspěvek", post, class:"btn btn-outline-primary"%>
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>

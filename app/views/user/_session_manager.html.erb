@@ -1,0 +1,15 @@
+<% if current_user %>
+        <li>
+            <%= link_to "Můj profil", edit_user_registration_path , class:'nav-link', class:"btn btn-dark" %>
+        </li>
+        <li>
+            <%= button_to "Odhlásit se", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
+        </li>
+    <% else %>
+        <li>
+            <%= link_to "Zaregistrovat", new_user_registration_path, class:'nav-link', class:"btn btn-success" %>
+        </li>
+        <li>
+            <%= link_to "Přihlásit", new_user_session_path, class:'nav-link', class:"btn btn-success"%>
+        </li>
+<% end %>

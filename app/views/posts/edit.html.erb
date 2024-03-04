@@ -1,0 +1,14 @@
+<body class="p-3 mb-2 bg-dark text-white">
+  <div class="text-center" style="padding-top: 2rem">
+    <h1>Úprava příspěvku</h1>
+
+    <%= render "form", post: @post %>
+
+    <br>
+
+    <div>
+      <%= link_to "Ukázat příspěvek", @post, class:"btn btn-border-primary" %>
+      <%= link_to "Zpět na příspěvky", posts_path, class:"btn btn-border-primary" %>
+    </div>
+  </div>
+</body>
